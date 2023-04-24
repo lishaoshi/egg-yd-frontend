@@ -1,0 +1,59 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages】
+		{
+			"path" : "pages/login/login",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+			
+		},
+		{
+			"path" : "pages/login/forgot",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "忘记密码",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/login/create-compony",
+			"style": {
+				"navigationBarTitleText": "创建企业"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+		
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	// 使用npm安装时easycom配置（配u置完成后重新编译运行）
+	"easycom": {
+			"autoscan": true,
+			"custom": {
+				"u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
+			}
+		}
+
+}
